@@ -1,6 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 function User({ user, onRemove, onToggle }) {
+	useEffect(() => {
+		console.log('set User');
+		console.log(user);
+
+		return () => {
+			console.log('Before user');
+			console.log(user)
+		};
+	}, [user]);
+
 	return (
 		<div>
 			<b
@@ -19,7 +29,6 @@ function User({ user, onRemove, onToggle }) {
 }
 
 function UserList({ users, onRemove, onToggle }) {
-
 	return (
 		<div>
 			{users.map(user => (
