@@ -59,15 +59,15 @@ function App() {
 
 	const onRemove = useCallback(id => {
 		setUsers(users.filter(user => user.id !== id));
-	}, [ users ]);
+	}, []);
 
 	const onToggle = useCallback(id => {
-		setUsers(
+		setUsers(users =>
 			users.map(user =>
 				user.id === id ? { ...user, active: !user.active } : user
 			)
-		)
-	}, [ users ]);
+		);
+	}, []);
 
 	const count = useMemo(() => countActiveUsers(users), [ users ]);
 

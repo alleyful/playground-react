@@ -1,16 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
-function User({ user, onRemove, onToggle }) {
-	useEffect(() => {
-		console.log('set User');
-		console.log(user);
-
-		return () => {
-			console.log('Before user');
-			console.log(user)
-		};
-	}, [user]);
-
+const User = React.memo(function User({ user, onRemove, onToggle }) {
 	return (
 		<div>
 			<b
@@ -25,8 +15,8 @@ function User({ user, onRemove, onToggle }) {
 			<span>({user.email})</span>
 			<button onClick={() => onRemove(user.id)}>삭제</button>
 		</div>
-	)
-}
+	);
+});
 
 function UserList({ users, onRemove, onToggle }) {
 	return (
@@ -43,4 +33,4 @@ function UserList({ users, onRemove, onToggle }) {
 	)
 }
 
-export default UserList;
+export default React.memo(UserList);
