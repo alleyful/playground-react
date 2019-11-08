@@ -1,11 +1,8 @@
 import React from 'react';
+import Users from "./Users";
 
 function App() {
-  return (
-    <div className="App">
-      Hello Api
-    </div>
-  );
+  return <Users />;
 }
 
 export default App;
