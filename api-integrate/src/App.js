@@ -1,8 +1,8 @@
 import React from 'react';
-import UsersWithReducer from "./UsersWithReducer";
+import UsersUseAsync from "./UsersUseAsync";
 
 function App() {
-  return <UsersWithReducer />;
+  return <UsersUseAsync />;
 }
 
 export default App;
