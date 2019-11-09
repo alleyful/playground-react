@@ -1,8 +1,13 @@
 import React from 'react';
-import UsersUseAsync from "./UsersUseAsync";
+import Users from './UserswithContext';
+import { UsersProvider } from './UsersContext';
 
 function App() {
-  return <UsersUseAsync />;
+	return (
+		<UsersProvider>
+			<Users />
+		</UsersProvider>
+	);
 }
 
 export default App;
