@@ -9,5 +9,5 @@
 - [router-tutorial](./router-tutorial)
 - [ts-practice](./ts-practice)
 - [ts-react-redux-middleware](./ts-react-redux-middleware)
-- [ts-redux-tutorial](./ts-redux-tutorial)
+- [ts-react-redux-tutorial](./ts-react-redux-tutorial)
 - [ts-react-tutorial](./ts-react-tutorial)
