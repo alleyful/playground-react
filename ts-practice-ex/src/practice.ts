@@ -1,35 +1,25 @@
-interface Shape {
-  getArea(): number;
+interface Person {
+  name: string;
+  age?: number;
 }
 
-class Circle implements Shape {
-  radius: number;
-
-  constructor(radius: number) {
-    this.radius = radius;
-  }
-
-  getArea() {
-    return this.radius * this.radius * Math.PI;
-  }
+interface Developer extends Person {
+  skills: string[];
 }
 
-class Ractangle implements Shape {
-  width: number;
-  height: number;
+const person: Person = {
+  name: "김사람",
+  age: 20
+};
 
-  constructor(width: number, height: number) {
-    this.width = width;
-    this.height = height;
-  }
+const expert: Developer = {
+  name: "김개발",
+  skills: ["javascript", "react"]
+};
 
-  getArea() {
-    return this.width * this.height;
-  }
-}
+type People = Person[];
+const people: People = [person, expert];
 
-const shapes: Shape[] = [new Circle(5), new Ractangle(10, 5)];
-
-shapes.forEach(shape => {
-  console.log(shape.getArea());
-});
+type Color = "red" | "orange" | "yellow";
+const color: Color = "red";
+const colors: Color[] = ["orange", "yellow"];
