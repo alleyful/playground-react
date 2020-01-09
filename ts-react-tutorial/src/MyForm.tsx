@@ -24,13 +24,12 @@ function MyForm({ onSubmit }: MyFormProps) {
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    // 여기도 모르니까 any 로 하겠습니다.
     e.preventDefault();
     onSubmit(form);
     setForm({
       name: "",
       description: ""
-    }); // 초기화
+    });
   };
 
   return (
