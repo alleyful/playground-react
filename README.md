@@ -11,3 +11,5 @@
 - [ts-react-redux-middleware](./ts-react-redux-middleware)
 - [ts-react-redux-tutorial](./ts-react-redux-tutorial)
 - [ts-react-tutorial](./ts-react-tutorial)
+
+gitpod로 수정중입니다.
