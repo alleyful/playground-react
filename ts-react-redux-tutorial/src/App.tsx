@@ -1,8 +1,8 @@
 import React from "react";
-import CounterContainer from "./containers/CounterContainer";
+import Counter from "./containers/Counter";
 
 const App: React.FC = () => {
-  return <CounterContainer />;
+  return <Counter />;
 };
 
 export default App;
