@@ -1,5 +1,17 @@
-describe("The Home Page", function() {
-  it("successfully loads", function() {
-    cy.visit("http://localhost:3000"); // change URL to match your dev URL
+describe("First Test", function() {
+  it("click buttons", function() {
+    cy.visit("http://localhost:3000");
+
+    cy.get("button")
+      .contains("SET_COUNT")
+      .click();
+
+    cy.get("button")
+      .contains("SET_TEXT")
+      .click();
+
+    cy.get("button")
+      .contains("SET_COLOR")
+      .click();
   });
 });
