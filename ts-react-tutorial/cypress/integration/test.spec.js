@@ -13,5 +13,9 @@ describe("First Test", function() {
     cy.get("button")
       .contains("SET_COLOR")
       .click();
+
+    cy.get("button")
+      .contains("TOGGLE_GOOD")
+      .click();
   });
 });
