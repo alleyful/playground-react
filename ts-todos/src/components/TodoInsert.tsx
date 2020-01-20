@@ -17,11 +17,14 @@ function TodoInsert() {
   return (
     <form onSubmit={onSubmit}>
       <input
+        className="todoInput"
         placeholder="할 일을 입력하세요."
         value={value}
         onChange={onChange}
       />
-      <button type="submit">등록</button>
+      <button className="todoSubmit" type="submit">
+        등록
+      </button>
     </form>
   );
 }
