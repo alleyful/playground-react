@@ -8,6 +8,9 @@ context("Actions", () => {
       .type("write todos")
       .should("have.value", "write todos");
 
-    cy.get(".todoSubmit").click();
+    cy.get(".todoSubmit")
+      .click()
+      .get(".TodoItem")
+      .contains("write todos");
   });
 });
