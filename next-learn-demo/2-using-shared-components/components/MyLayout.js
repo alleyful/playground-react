@@ -9,8 +9,8 @@ const layoutStyle = {
 const Layout = props => (
   <div style={layoutStyle}>
     <Header />
-    {props.content}
+
   </div>
-);
+)
 
 export default Layout;
