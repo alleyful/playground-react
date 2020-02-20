@@ -6,11 +6,13 @@ const layoutStyle = {
   border: '1px solid #DDD'
 }
 
-const Layout = props => (
-  <div style={layoutStyle}>
-    <Header />
+const withLayout = Page => {
+  return () => (
+    <div style={layoutStyle}>
+      <Header />
+      <Page />
+    </div>
+  );
+};
 
-  </div>
-)
-
-export default Layout;
+export default withLayout;
